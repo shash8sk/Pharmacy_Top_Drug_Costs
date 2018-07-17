@@ -9,7 +9,7 @@ import os
 import csv
 
 
-data_filename = "..\\Input\\itcont.txt"
+data_filename = "./Input/itcont.txt"
 
 counter = 0
 digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9','.']
@@ -44,7 +44,7 @@ with open(data_filename, buffering = 20000000) as infile:
 cost_sort = [(k, dict_cost[k]) for k in sorted(dict_cost, key=dict_cost.get, reverse=True)]
 #print(cost_sort)
 
-outfile="..\\Output\\top_cost_drug.txt"
+outfile="./Output/top_cost_drug.txt"
 out_filename = outfile
 output = open(out_filename, 'w')
 output.write('drug_name,num_prescriber,total_cost\n')
