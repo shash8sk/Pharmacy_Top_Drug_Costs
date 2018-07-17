@@ -7,9 +7,10 @@ Created on Sat Jul 14 10:28:52 2018
 import io
 import os
 import csv
+import sys
 
 
-data_filename = sys.argv[0]
+data_filename = str(sys.argv[1])
 
 counter = 0
 digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9','.']
@@ -45,7 +46,7 @@ cost_sort = [(k, dict_cost[k]) for k in sorted(dict_cost, key=dict_cost.get, rev
 #print(cost_sort)
 
 
-out_filename = sys.argv[1]
+out_filename = str(sys.argv[2])
 output = open(out_filename, 'w')
 output.write('drug_name,num_prescriber,total_cost\n')
 
