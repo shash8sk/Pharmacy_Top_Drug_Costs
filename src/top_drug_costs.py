@@ -51,6 +51,6 @@ output = open(out_filename, 'w')
 output.write('drug_name,num_prescriber,total_cost\n')
 
 for i, j in cost_sort:
-    line = '"' + str(i)+ '"' + ',' + str(len(dict_count[i])) + ',' + str(j) + '\n' 
+    line =  str(i) + ',' + str(len(dict_count[i])) + ',' + str(j) + '\n' 
     output.write(line)
 output.close()
