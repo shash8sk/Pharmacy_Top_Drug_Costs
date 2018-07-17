@@ -28,4 +28,18 @@ You will need to have the following csv package to import the csv without any is
 
 The output cost will ne rounded to the nearest dollar amount.
 
+Tests:
+
+The code successfully completed the 24 million record dataset without memory issues.
+The code can handle commas in costs and currency symbols.
+The code also handles commas in drug_name or prescriber names
+
+
+It would be better if we could quote the drugname in the output file so that we deal with commas if any in drug names.
+The output file causes a mismatch if this is done and hence this feature was removed to clear the tests.
+
+Also, the cost had to be rounded so as to match the test output.
+
+
+
 
