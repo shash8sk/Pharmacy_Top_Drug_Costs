@@ -40,6 +40,9 @@ The output file causes a mismatch if this is done and hence this feature was rem
 
 Also, the cost had to be rounded so as to match the test output.
 
+the program can be executed using the run.sh file. 
+Make sure to add python to the path variable or specify the full python path and full path of .py file and the input and output file location as arguments.
+
 
 
 
