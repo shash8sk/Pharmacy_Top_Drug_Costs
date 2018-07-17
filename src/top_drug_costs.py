@@ -44,7 +44,7 @@ with open(data_filename, buffering = 20000000) as infile:
 cost_sort = [(k, dict_cost[k]) for k in sorted(dict_cost, key=dict_cost.get, reverse=True)]
 #print(cost_sort)
 
-outfile="..\\Output\\top_cost_drug.txt.txt"
+outfile="..\\Output\\top_cost_drug.txt"
 out_filename = outfile
 output = open(out_filename, 'w')
 output.write('drug_name,num_prescriber,total_cost\n')
