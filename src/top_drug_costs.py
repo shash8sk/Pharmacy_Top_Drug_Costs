@@ -9,7 +9,7 @@ import os
 import csv
 
 input_path = 'Input/itcont.txt'
-data_filename = os.path.join(os.path.dirname(__file__), input_path)
+data_filename = os.path.join(os.path.join(os.path.dirname(__file__), '..'), input_path)
 
 counter = 0
 digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9','.']
@@ -45,7 +45,7 @@ cost_sort = [(k, dict_cost[k]) for k in sorted(dict_cost, key=dict_cost.get, rev
 #print(cost_sort)
 
 out_path = 'Output/top_cost_drug.txt'
-out_filename = os.path.join(os.path.dirname(__file__), out_path)
+out_filename = os.path.join(os.path.join(os.path.dirname(__file__), '..'), out_path)
 output = open(out_filename, 'w')
 output.write('drug_name,num_prescriber,total_cost\n')
 
